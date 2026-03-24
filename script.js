@@ -1,6 +1,7 @@
 // Lab Procedure - API Integration
-const OPENROUTER_API_KEY = "YOUR_OPENROUTER_KEY";
-const HUGGING_FACE_API_KEY = "YOUR_HUGGING_FACE_KEY";
+// Use keys from the config file (not pushed to GitHub)
+const OPENROUTER_API_KEY = CONFIG.OPENROUTER_API_KEY;
+const HUGGING_FACE_API_KEY = CONFIG.HUGGING_FACE_API_KEY;
 
 // Selected Models
 const TEXT_MODEL = "openrouter/auto";
