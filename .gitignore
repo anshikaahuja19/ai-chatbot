@@ -2,3 +2,6 @@ node_modules
 .DS_Store
 .env
 config.js
+
+# Local Netlify folder
+.netlify

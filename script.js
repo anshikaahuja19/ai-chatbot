@@ -1,7 +1,5 @@
 // Lab Procedure - API Integration
-// Use keys from the config file (not pushed to GitHub)
-const OPENROUTER_API_KEY = CONFIG.OPENROUTER_API_KEY;
-const HUGGING_FACE_API_KEY = CONFIG.HUGGING_FACE_API_KEY;
+// Keys are handled server-side via Netlify Functions (see netlify/functions/chat.js)
 
 // Selected Models
 const TEXT_MODEL = "openrouter/auto";
