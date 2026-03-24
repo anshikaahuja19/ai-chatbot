@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Nexus | Next-Gen AI Chatbot</title>
+  <meta name="description" content="Experience the power of a unified AI API with AI Nexus - text and image generation in one place.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  
+  <main class="chat-container">
+    <header>
+      <h1><i data-lucide="zap"></i> AI Nexus</h1>
+      <div class="status">
+        <span class="status-dot"></span>
+        <span>Online & Secure</span>
+      </div>
+    </header>
+
+    <div id="chat-history">
+      <div class="message bot-message">
+        Hello! I'm your AI assistant. I can help with text generation or even create images for you. How can I help you today?
+      </div>
+    </div>
+
+    <div class="input-area">
+      <button id="image-btn" title="Toggle Image Mode">
+        <i data-lucide="image"></i>
+        <span>Image Mode</span>
+      </button>
+      <input type="text" id="user-input" placeholder="Ask me anything..." autocomplete="off">
+      <button id="send-btn">
+        <i data-lucide="send"></i>
+      </button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
