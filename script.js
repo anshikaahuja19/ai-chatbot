@@ -15,20 +15,17 @@ const imageBtn = document.getElementById("image-btn");
 
 let isImageMode = false;
 
-// Part B: API Integration Setup for OpenRouter
+// Part B: API Integration Setup - calls our secure serverless function
 async function queryText(data) {
   try {
-    const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
-      headers: {
-        Authorization: `Bearer ${OPENROUTER_API_KEY}`,
-        "Content-Type": "application/json",
-      },
+    const response = await fetch("/.netlify/functions/chat", {
       method: "POST",
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
     });
 
     const result = await response.json();
-    if (result.error) throw new Error(result.error.message || "Unknown error");
+    if (result.error) throw new Error(result.error.message || result.error);
     return result;
   } catch (error) {
     console.error("Text Error:", error);
